@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: 0;
+    list-style: none;
+    box-sizing: border-box;
+
+}
+
+.home-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.middel-content {
+    background-image: url("../project_material/background.jpg");
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    width: 50%;
+    padding: 1rem;
+    border: 0;
+    background-color: transparent;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+.slide{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
