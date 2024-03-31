@@ -1,5 +1,7 @@
 import React from 'react'
 import './Homepage.css'
+import Navigation from './Navigation'
+import Fotter from './Footer'
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -38,6 +40,7 @@ const Homepage = () => {
   }
   return (
     <div>
+      <Navigation/>
       <div className='home-page'>
         <div className='middel-content'>
           <div className='content'>
@@ -294,6 +297,7 @@ const Homepage = () => {
           </div>
         </div>
       </div>
+      <Fotter/>
     </div >
   )
 }
