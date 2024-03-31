@@ -3,7 +3,7 @@ import Logo from '../project_material/logovecto.png';
 const Footer = () => {
   return (
     <div>
-      <div className='footer'>
+      <div className='fotter'>
         <div className='fotter-cover'>
           <div className='company'>
             <div className='ftr-logo'>

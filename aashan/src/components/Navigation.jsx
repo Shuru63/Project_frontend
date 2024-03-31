@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import './Nav_footer.css';
 import Logo from '../project_material/logovecto.png';
+import { Link } from 'react-router-dom';
 
 const Navigation = () => {
     // State to track visibility of dropdowns
-    const [servicesDropdownVisible, setServicesDropdownVisible] = useState(false);
+
    
     const [showMedia, setMedia] = useState(false)
     return (
@@ -25,40 +26,27 @@ const Navigation = () => {
                           menu
                         </span>)}
                     </button>
-                    <div className='nav-link'>
+                    <div className='navlink'>
                         <ul className={showMedia?'nav-ul ':'nav-ul nav-hide'}>
-                            <li className='nav-item'onClick={()=> setMedia(!showMedia)}>
-                                Home
+                         <li className='navitem'onClick={()=> setMedia(!showMedia)}>
+                           <Link to='/' >     Home</Link>
                             </li>
-                            <li className='nav-item' onClick={()=> setMedia(!showMedia)}>
+                            <li className='navitem' onClick={()=> setMedia(!showMedia)}>
                                 About
                             </li>
-                            <li className='nav-item' onClick={() => setServicesDropdownVisible(!servicesDropdownVisible)}>
-                                <div className=''> Services <span className="material-symbols-outlined">
-                                    {servicesDropdownVisible ? "expand_less" : "expand_more"}
-                                </span>
-                                {servicesDropdownVisible && (
-                                    <ul className='drop-down'>
-                                        <li className='drop-item' onClick={()=> setMedia(!showMedia)}>
-                                            Services 1
-                                        </li>
-                                        <li className='drop-item' onClick={()=> setMedia(!showMedia)}>
-                                            Services 2
-                                        </li>
-                                    </ul>
-                                )}
-                                </div> 
+                            <li className='navitem' onClick={()=> setMedia(!showMedia)}>
+                                Services
                             </li>
-                            <li className='nav-item' onClick={()=> setMedia(!showMedia)}>
+                            <li className='navitem' onClick={()=> setMedia(!showMedia)}>
                                 workout
                             </li>
-                            <li className='nav-item' onClick={()=> setMedia(!showMedia)}>
+                            <li className='navitem' onClick={()=> setMedia(!showMedia)}>
                                 Contact
                             </li>
                         </ul>
                     </div>
                     <div className='sub'>
-                        <button className='sub-btn'>subscribe</button>
+                     <Link to='/register'> <button className='sub-btn'>subscribe</button></Link>  
                     </div>
                     <div className='search'>
                         <div className='search-bar'>
