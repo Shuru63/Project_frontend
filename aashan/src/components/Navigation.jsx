@@ -29,24 +29,23 @@ const Navigation = () => {
                     <div className='navlink'>
                         <ul className={showMedia?'nav-ul ':'nav-ul nav-hide'}>
                          <li className='navitem'onClick={()=> setMedia(!showMedia)}>
-                           <Link to='/' >     Home</Link>
+                           <Link to='/' style={{color:"white",textDecoration:"none"}} >     Home</Link>
                             </li>
+                           
                             <li className='navitem' onClick={()=> setMedia(!showMedia)}>
-                                About
-                            </li>
-                            <li className='navitem' onClick={()=> setMedia(!showMedia)}>
-                                Services
+                                <Link to='/services' style={{color:"white",textDecoration:"none"}}>   Services  </Link>
                             </li>
                             <li className='navitem' onClick={()=> setMedia(!showMedia)}>
                                 workout
                             </li>
-                            <li className='navitem' onClick={()=> setMedia(!showMedia)}>
+                            <Link to='/contact' style={{color:"white",textDecoration:"none"}}>  <li className='navitem' onClick={()=> setMedia(!showMedia)}>
                                 Contact
-                            </li>
+                            </li></Link>
                         </ul>
                     </div>
                     <div className='sub'>
-                     <Link to='/register'> <button className='sub-btn'>subscribe</button></Link>  
+                     <Link to='/payment'> <button className='sub-btn'>subscribe</button></Link>
+                     <Link to='/register'> <button className='sub-btn'>Register</button></Link>    
                     </div>
                     <div className='search'>
                         <div className='search-bar'>

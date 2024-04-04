@@ -1,0 +1,218 @@
+
+h6 , p{
+    margin: 0;
+}
+.user-admin{
+        background: rgb(189 154 199);
+        padding: 2rem;
+        box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.292);
+}
+.user-cover{
+    background: white;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow-x: hidden;
+}
+.all-dash{
+     display: flex;
+ justify-content: flex-end;
+    /*align-items: center; */
+    transition: margin-left 0.3s ease;
+    margin-left: 0;
+    scroll-behavior: none;
+}
+.dash-cover{
+    width: 75%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+.dash-cover-open{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+.all-content{
+    width: 68%;
+}
+.profile{
+    width:30%;  
+}
+.heart-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.user-card{
+    padding: 1rem;
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.184);
+    border-radius: 10px;
+    width: 20%;
+}
+.user-card span{
+   
+    padding: 0.5rem;
+    border-radius: 15px;
+}
+.user-card span:nth-child(1){
+ background: rgb(245, 128, 147);
+}
+.user-card span:nth-child(2){
+    background: rgb(38, 29, 203);
+}
+.user-card span:nth-child(3){
+    background: rgb(73, 203, 29);
+}
+.user-card span:nth-child(4){
+    background: rgb(45, 6, 96);
+}
+.profile{
+    padding: 0.7rem;  
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.184);
+    border: 1px solid rgba(128, 128, 128, 0.214);
+    border-radius: 1.2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.user-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.user-img img{
+    width: 25%;
+    border:2px solid black;
+    border-radius:50%;
+}
+.clender{
+    width: 100%;
+    margin-top: 1rem;
+}
+.top-port{
+    display: flex;
+    align-items:center ;
+    justify-content: space-between;
+}
+.profile-description{
+    margin-top: 1rem;
+}
+.user-name{
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    flex-direction: column;
+}
+.weight{
+    display: flex;
+    align-items:center ;
+    justify-content: space-around;
+    box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.292);
+    border: 1px solid rgba(128, 128, 128, 0.214);
+    padding: 0.5rem;
+    margin-top: 1rem;
+}
+.weight1{
+    margin-left: 1.2rem;
+}
+.weight1 h6{
+   color: #000;
+   margin: 0;
+}
+.weight1 p{
+    margin: 0;
+}
+.fitness{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.shedule{
+    margin-top: 1rem;
+}
+.chart{
+    margin-top: 1.2rem;
+    box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.292);
+    border: 1px solid rgba(128, 128, 128, 0.214);
+    border-radius: 12px;
+}
+.food{
+    margin-top: 1.2rem;
+    box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.292);
+    border: 1px solid rgba(128, 128, 128, 0.214); 
+    border-radius: 12px; 
+    padding: 1rem;
+}
+.food-cover{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.food-img{
+    width: 30%;
+    padding: 3px;
+}
+.food-name{
+    width: 68%;
+}
+.food-img img{
+    width: 100%;
+    border-radius: 12px;
+}
+.food-card{
+    display: flex;
+    align-items: center;
+    box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.292);
+    border: 1px solid rgba(128, 128, 128, 0.214); 
+}
+.food-name h6,p{
+    font-size: 0.6rem;
+}
+.last-user{
+    display: flex;
+}
+.trainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.292);
+    border: 1px solid rgba(128, 128, 128, 0.214); 
+}
+.trainer-card{
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.184);
+    width: 70%;
+    margin: 1rem;
+}
+.trainer-cover{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.trainer-card img{
+   width:100%;
+   height:8vh;
+}
+.trainer-card h5 ,p{
+font-size: 0.8rem;
+}
+.boost{
+    box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.292);
+    border: 1px solid rgba(128, 128, 128, 0.214); 
+    width: 100%;
+}
+.two-output{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.292);
+    border: 1px dotted rgba(255, 0, 0, 0.214);
+    padding: 0.5rem;
+    margin-top: 1rem;
+    background: rgb(238, 253, 224);
+    color: #000000;
+  }
+ 

@@ -17,8 +17,8 @@ const Footer = () => {
             </ul>
           </div>
           <div className='time'>
-            <h1>OPENING HOURS
-            </h1>
+            <h2>OPENING HOURS
+            </h2>
             <div className='detail-time'>
               <p className='day'>
                 Monday – Saturday
@@ -45,7 +45,7 @@ const Footer = () => {
             </div>
           </div>
           <div className='quick-link'>
-            <h1>QUICK-LINK            </h1>
+            <h2>QUICK-LINK            </h2>
             <ul className='link'>
               <li className='ftr-link'><span class="material-symbols-outlined">
                 arrow_forward_ios
@@ -63,7 +63,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className='contactus'>
-            <h1>Contact           </h1>
+            <h2>Contact           </h2>
             <div className='detail-time'>
               <p className='day'>
                 Address:

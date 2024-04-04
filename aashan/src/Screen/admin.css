@@ -1,0 +1,29 @@
+
+.service-contact {
+    background: url("../project_material/gym1.jpg") no-repeat 50% 50%;
+    background-size: cover
+}
+
+.potfoliobg-cover {
+    background-color: rgba(0, 0, 0, 0.608);
+    height: 35vh;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cover-cta-2 {
+    background-color: rgba(0, 0, 0, 0.432);
+    padding: 2rem;
+
+}
+.sub-btn {
+    background-color: #ee9016;
+    padding: 1rem 1.5rem;
+    border-radius: 5rem;
+    cursor: pointer;
+}
+.sub-btn:hover{
+    background-color: #e95d5d;
+}

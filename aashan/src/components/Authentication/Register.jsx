@@ -59,13 +59,13 @@ const Register = () => {
         };
 
         if (validateForm()) {
-            axios.post('http://localhost:8000/register', {
-                firstName,
-                lastName,
-                middleName,
-                phoneInput,
-                password,
-                confirmPassword
+            axios.post('http://localhost:8000/api/createuser', {
+                fname: firstName,
+                mname: middleName,
+                lname: lastName,
+                mobile: phoneInput,
+                password: password,
+                ConfirmPassword: confirmPassword
             })
             .then(result => {
                 console.log(result);

@@ -10,6 +10,7 @@ import img2 from '../project_material/gym1.jpg'
 import img3 from '../project_material/gym-5977600_640.jpg'
 import img4 from '../project_material/training.jpg'
 import img5 from '../project_material/woman-5.jpg'
+import { Link } from 'react-router-dom';
 const Homepage = () => {
   var settings_client = {
     dots: true,
@@ -229,9 +230,9 @@ const Homepage = () => {
                       done
                     </span>Gym, fight club</li>
                   </ul>
-                  <button className='price-btn'> Join us now<span className="material-symbols-outlined play-btn">
+                <Link to='/payment' style={{color:"white",textDecoration:"none"}}>  <button className='price-btn'> Join us now<span className="material-symbols-outlined play-btn">
               play_circle
-            </span></button>
+            </span></button></Link>
             
             </div>
             <div className='price-card'>
@@ -259,9 +260,9 @@ const Homepage = () => {
                       done
                     </span>Gym, fight club</li>
                   </ul>
-                  <button className='price-btn'> Join us now<span className="material-symbols-outlined play-btn">
+                  <Link to='/payment' style={{color:"white",textDecoration:"none"}}>  <button className='price-btn'> Join us now<span className="material-symbols-outlined play-btn">
               play_circle
-            </span></button>
+            </span></button></Link>
             
             </div>
             <div className='price-card'>
@@ -289,9 +290,9 @@ const Homepage = () => {
                       done
                     </span>Gym, fight club</li>
                   </ul>
-                  <button className='price-btn'> Join us now<span className="material-symbols-outlined play-btn">
+                  <Link to='/payment' style={{color:"white",textDecoration:"none"}}>  <button className='price-btn'> Join us now<span className="material-symbols-outlined play-btn">
               play_circle
-            </span></button>
+            </span></button></Link>
             
             </div>
           </div>
