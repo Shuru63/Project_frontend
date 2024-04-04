@@ -2,6 +2,7 @@ import React from 'react'
 import './auth.css';
 import { useState } from 'react';
 import '@coreui/coreui/dist/css/coreui.min.css';
+import { useNavigate } from 'react-router-dom';
 import {
   CModal,
   CModalTitle,
@@ -10,6 +11,7 @@ import {
   CModalHeader,
   CButton,
 } from '@coreui/react';
+import axios from 'axios'
 import { Link } from 'react-router-dom';
 const Auth = () => {
   const [passwordType, setPasswordType] = useState('password');
@@ -18,6 +20,7 @@ const Auth = () => {
   const [visible, setVisible] = useState(false);
   const [message, setMessage] = useState('');
   const [messageColor, setMessageColor] = useState('green');
+  const navigate=useNavigate()
   const handleErrorChange = (e) => {
     setVisible(true);
     setMessage(e);
@@ -25,8 +28,8 @@ const Auth = () => {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Input validation
-    if (!phone.trim() || !password.trim()) {
+   
+    if (!phone || !password) {
       handleErrorChange('Mobile number and password are required.');
       return;
     }
@@ -34,8 +37,19 @@ const Auth = () => {
       handleErrorChange('Please enter a valid 10-digit mobile number.');
       return;
     }
-    // If all validations pass, you can proceed with login
-    console.log('Login successful');
+    else{
+      axios.post('http://localhost:8000/api/loginuser',{
+      mobile: phone,
+      password: password,
+   }).then(result=>{
+    console.log(result);
+    console.log('Log in successful');
+    handleErrorChange('Log in successful');
+    navigate('/useradmin');
+   }) 
+  
+  }
+    
   };
   const togglePassword = () => {
     if (passwordType === 'password') {
